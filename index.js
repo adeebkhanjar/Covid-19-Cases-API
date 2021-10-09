@@ -54,14 +54,13 @@ async function getData() {
         spinner.style.display = 'block';
         //! mainBtn.style.display = 'none';
         let data1 = await (await fetch('https://corona-api.com/countries')).json();
-        let data2 = await (await fetch('https://cors-anywhere.herokuapp.com/https://restcountries.herokuapp.com/api/v1')).json();
+        let data2 = await (await fetch('https://raw.githubusercontent.com/Anan014/covid19_1.0/main/js/all_countries.json')).json();
         spinner.style.display = 'none';
         //!mainBtn.style.display = 'block';
         localStorage.setItem("tempStorage", JSON.stringify({ data1: data1, data2: data2 }))
     }
     let data = JSON.parse(localStorage.getItem("tempStorage"))
     checkFirstFetch = true
-    console.log(data);
     tempWorld = data.data1.data
         // ----------------------variable that holds an array of [{regions {that hold an array of [countries]}}]---------------------------//
     regions = Array.from(new Set(data.data2.map(v => {
