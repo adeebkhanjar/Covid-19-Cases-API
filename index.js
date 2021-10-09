@@ -54,7 +54,7 @@ async function getData() {
         spinner.style.display = 'block';
         //! mainBtn.style.display = 'none';
         let data1 = await (await fetch('https://corona-api.com/countries')).json();
-        let data2 = await (await fetch('https://raw.githubusercontent.com/Anan014/covid19_1.0/main/js/all_countries.json')).json();
+        let data2 = await (await fetch('https://raw.githubusercontent.com/adeebkhanjar/covCases/main/countries.json')).json();
         spinner.style.display = 'none';
         //!mainBtn.style.display = 'block';
         localStorage.setItem("tempStorage", JSON.stringify({ data1: data1, data2: data2 }))
