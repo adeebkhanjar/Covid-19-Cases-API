@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js" defer></script>
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <h1>Covid-19 Cases</h1>
+    <div class="main-container">
+        <canvas class="chart" width="100" height="40"></canvas>
+        <div class="spinner">
+            <div class="box">
+                <div class="body ">
+                    <div class="details">
+                        <div class="r-detail">
+                        </div>
+                        <div class="m-detail">
+                        </div>
+                        <div class="mm-detail">
+                        </div>
+                        <div class="l-detail">
+                        </div>
+                    </div>
+                    <div class="shapes">
+                        <div class="b-shape">
+                        </div>
+                        <div class="t-shape">
+                        </div>
+                        <div class="rb-shape">
+                        </div>
+                        <div class="tm-shape">
+                        </div>
+                        <div class="lm-shape">
+                        </div>
+                        <div class="rm-shape">
+                        </div>
+                        <div class="bm-shape">
+                        </div>
+                        <div class="lt-shape">
+                        </div>
+                    </div>
+                    <div class="sm-details">
+                        <div class="r-detail">
+                        </div>
+                        <div class="m-detail">
+                        </div>
+                        <div class="mm-detail">
+                        </div>
+                        <div class="l-detail">
+                        </div>
+                    </div>
+                    <div class="sm-shapes">
+                        <div class="b-shape">
+                        </div>
+                        <div class="t-shape">
+                        </div>
+                        <div class="rb-shape">
+                        </div>
+                        <div class="tm-shape">
+                        </div>
+                        <div class="lm-shape">
+                        </div>
+                        <div class="rm-shape">
+                        </div>
+                        <div class="bm-shape">
+                        </div>
+                        <div class="lt-shape">
+                        </div>
+                    </div>
+                </div>
+                <div class="centered">
+                    <div class="text">
+                        COVID-19
+                    </div>
+                </div>
+                <div class="message">
+                    Please wait...
+                </div>
+            </div>
+        </div>
+        <div class="main-btn">
+            <input type="button" value="World">
+            <input type="button" value="Asia">
+            <input type="button" value="Europe">
+            <input type="button" value="Africa">
+            <input type="button" value="Oceania">
+            <input type="button" value="Americas">
+            <select name="countries-list-select" id="countries-list-select"></select>
+
+        </div>
+        <div class="main-result">
+            <div><span>Cases:</span><span class="tc"></span></div>
+            <div><span>New Cases:</span><span class="nc"></span></div>
+            <div><span>Deathes:</span><span class="td"></span></div>
+            <div><span>New Deathes:</span><span class="nd"></span></div>
+            <div><span>Recovered:</span><span class="tr"></span></div>
+            <div><span>Critical:</span><span class="cr"></span></div>
+            <div><span>Percentage:</span><span class="per"></span></div>
+
+        </div>
+    </div>
+</body>
+
+</html>
