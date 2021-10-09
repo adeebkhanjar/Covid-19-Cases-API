@@ -461,3 +461,30 @@ html {
 .spinner {
     display: none;
 }
+
+@media (max-width: 600px) {
+    .chart {
+        transform: rotate(90deg) scale(1.5);
+        margin-top: 30vh;
+    }
+    .main-container {
+        height: 90vh;
+        width: 90vw;
+    }
+    .main-btn,
+    .main-result {
+        display: flex;
+        flex-direction: column;
+    }
+    .media-splitter {
+        display: flex;
+        margin-top: 250px;
+    }
+    input,
+    select,
+    .media-splitter div {
+        transform: scale(1.5);
+        margin: 2px 10vw;
+        width: 15vw;
+    }
+}
