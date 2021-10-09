@@ -464,7 +464,7 @@ html {
 
 @media (max-width: 600px) {
     .chart {
-        transform: rotate(90deg) scale(1.5);
+        transform: rotate(90deg) scale(1.8);
         margin-top: 30vh;
     }
     .main-container {
@@ -479,6 +479,7 @@ html {
     .media-splitter {
         display: flex;
         margin-top: 250px;
+        margin-left: 10vw;
     }
     input,
     select,
